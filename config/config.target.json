@@ -1,0 +1,18 @@
+{
+  "path": {
+    "source": "/Download/_Download",
+    "destination": "/Download/Plex",
+    "complete": "/Download/_DownloadComplete",
+    "fake": "/Download/_DownloadFake",
+    "overlap": "/Download/_DownloadOverlap",
+    "hold": "/Download/_DownloadHold",
+    "log": "/Download/_Log/log.txt"
+  },
+  "url": { "sms": "" },
+  "target": [
+    { "category": "", "season": "", "season_folder": "", "ep_calc": "", "name": "", "new_name": "", "is_bind": false, "is_hold": false, "is_use": true },
+    { "category": "시사", "season": "", "season_folder": "", "ep_calc": "", "name": "그것이 알고싶다", "new_name": "", "is_bind": true, "is_hold": false, "is_use": true },
+    { "category": "예능", "season": "", "season_folder": "", "ep_calc": "", "name": "도시어부", "new_name": "", "is_bind": false, "is_hold": false, "is_use": true },
+    { "category": "드라마", "season": "", "season_folder": "", "ep_calc": "", "name": "배드파파", "new_name": "", "is_bind": false, "is_hold": false, "is_use": true }
+  ]
+}
