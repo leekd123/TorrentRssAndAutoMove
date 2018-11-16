@@ -1,6 +1,6 @@
 <?
 
-include_once ($_SERVER['DOCUMENT_ROOT']."/settings.php");
+require_once "settings.php";
 
 FileMoveTask($settings);
 
@@ -89,7 +89,7 @@ function FileMoveTask($settings) {
 					$pre_message = "C ";
 				}
 				$message = $pre_message.$file["name"];
-				if($is_send && !$url_sms) {
+				if($is_send && $url_sms) {
 					sendMessage($message, $url_sms);
 				}
 				put_log($message, $settings->path->log);
@@ -118,6 +118,7 @@ function isFake($path, $is_hold) {
 }
 
 function put_log($message, $log_path) {
+	if($log_path == "") return;
 	$log_file = fopen($log_path, "a") or die("Unable to open file!");
 
 	date_default_timezone_set('Asia/Seoul');
